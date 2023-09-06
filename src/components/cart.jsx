@@ -9,7 +9,7 @@ export default function Cart() {
 
   const updateAmount = async (cartTotal) => {
     
-    const response = await fetch('http://localhost:80/razorpay', {
+    const response = await fetch('http://localhost:3001/razorpay', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ export default function Cart() {
       key: process.env.RAZORPAY_KEY_ID,
       currency: data.currency,
       amount: data.amount,
-      callback_url: 'http://localhost:80/razorpay/callback',
+      callback_url: 'http://localhost:3001/razorpay/callback',
       
       order_id: data.id,
       
