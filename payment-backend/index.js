@@ -1,7 +1,14 @@
 require("dotenv").config();
-
+const https = require('https');
+const fs = require('fs');
 const app = require("express")();
-const port = 3001;
+
+const options = {
+    key: fs.readFileSync('/etc/ssl/private.key.pem'),
+    cert: fs.readFileSync('/etc/ssl/domain.cert.pem')
+};
+
+const port = 443;
 
 const path = require("path");
 const cors = require("cors");
