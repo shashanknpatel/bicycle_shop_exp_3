@@ -1,7 +1,18 @@
 require("dotenv").config();
 const https = require('https');
 const fs = require('fs');
+const path = require("path");
+const cors = require("cors");
+const shortid = require("shortid");
+const Razorpay = require("razorpay");
+const bodyParser = require("body-parser");
+
 const app = require("express")();
+
+const corsOptions = {
+  origin: 'https://www.shashanknpatel.com',
+};
+app.use(cors(corsOptions));
 
 const options = {
     key: fs.readFileSync('/etc/ssl/private.key.pem'),
@@ -10,11 +21,6 @@ const options = {
 
 const port = 443;
 
-const path = require("path");
-const cors = require("cors");
-const shortid = require("shortid");
-const Razorpay = require("razorpay");
-const bodyParser = require("body-parser");
 
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID,
@@ -22,7 +28,6 @@ const razorpay = new Razorpay({
 });
 
 app.use(bodyParser.json());
-app.use(cors());
 
 app.post("/razorpay", async (req, res) => {
   const payment_capture = 1;
