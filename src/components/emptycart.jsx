@@ -9,7 +9,7 @@ export default function EmptyCart() {
                     <a href="http://localhost:3000/"><img className="h-16" src={BicycleShop} /></a>
                         <ul className="flex">
 
-                            <li className="p-4 font-semibold hover:underline decoration-dashed" ><a href="http://localhost:3000/">Home</a></li>
+                            <li className="p-4 font-semibold hover:underline decoration-dashed" ><a href="https://shashanknpatel.com">Home</a></li>
 
                             <li className="p-4 underline decoration-dashed" >
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#06b6d4" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
