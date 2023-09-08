@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.157e7f8a.css",
-    "main.js": "/static/js/main.23068c5e.js",
+    "main.js": "/static/js/main.d0a64cd0.js",
     "static/media/bluebicycle_medium.jpg": "/static/media/bluebicycle_medium.138121a18dec9ccc3104.jpg",
     "static/media/Web_MY22_Blizzard_A10_C1_Profile_2400x.jpg": "/static/media/Web_MY22_Blizzard_A10_C1_Profile_2400x.305f9481118c91285938.jpg",
     "static/media/Web_MY22_Blizzard_C30_C1_Profile_1280x.jpg": "/static/media/Web_MY22_Blizzard_C30_C1_Profile_1280x.e3639e19c80f7aed4ec8.jpg",
@@ -9,10 +9,10 @@
     "static/media/NavbarLogo.jpg": "/static/media/NavbarLogo.42edfb047526b16b4c81.jpg",
     "index.html": "/index.html",
     "main.157e7f8a.css.map": "/static/css/main.157e7f8a.css.map",
-    "main.23068c5e.js.map": "/static/js/main.23068c5e.js.map"
+    "main.d0a64cd0.js.map": "/static/js/main.d0a64cd0.js.map"
   },
   "entrypoints": [
     "static/css/main.157e7f8a.css",
-    "static/js/main.23068c5e.js"
+    "static/js/main.d0a64cd0.js"
   ]
 }

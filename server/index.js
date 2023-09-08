@@ -1,6 +1,6 @@
 require("dotenv").config();
 const https = require('https');
-const fs = require('fs');
+
 const path = require("path");
 const cors = require("cors");
 const shortid = require("shortid");
@@ -9,17 +9,9 @@ const bodyParser = require("body-parser");
 
 const app = require("express")();
 
-const corsOptions = {
-  origin: 'https://www.shashanknpatel.com',
-};
-app.use(cors(corsOptions));
+app.use(cors());
 
-const options = {
-    key: fs.readFileSync('/etc/ssl/private.key.pem'),
-    cert: fs.readFileSync('/etc/ssl/domain.cert.pem')
-};
-
-const port = 443;
+const port = 3001;
 
 
 const razorpay = new Razorpay({
