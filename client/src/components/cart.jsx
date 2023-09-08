@@ -9,7 +9,7 @@ export default function Cart() {
 
   const updateAmount = async (cartTotal) => {
     
-    const response = await fetch('http://localhost:3001/razorpay', {
+    const response = await fetch('https://shashanknpatel.com/razorpay', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
